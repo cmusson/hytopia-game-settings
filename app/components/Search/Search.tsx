@@ -11,7 +11,7 @@ interface ISearchProps
 
 const Search = ({}: ISearchProps) => {
   return (
-    <div className="ml-8 bg-black flex items-center justify-start border border-gray-300 rounded-lg overflow-hidden">
+    <div className="mb-2 md:mb-0 md:ml-8 bg-black flex items-center justify-start border border-gray-800 hover:border-gray-300 rounded-lg overflow-hidden">
       <Image
         className="ml-2 mr-1"
         src="/search.svg"

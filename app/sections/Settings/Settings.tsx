@@ -16,7 +16,6 @@ const initialSettings = [
 const Settings = () => {
   const [settings, setSettings] = useState(initialSettings);
   const handleClick = (name: string) => {
-    console.log(settings);
     const updatedSelection = settings.map((setting) => {
       if (setting.title == name) {
         return { ...setting, selected: true };
@@ -28,10 +27,10 @@ const Settings = () => {
   };
 
   return (
-    <section className="flex align-center justify-between py-4 border-b">
+    <section className="flex align-center justify-between py-4 border-b border-gray-800 w-full gap-2">
       <div>Settings</div>
-      <nav>
-        <ul className="flex items-center gap-2">
+      <nav className="w-full">
+        <ul className="flex items-center gap-2 flex-wrap">
           {settings.map((setting, i) => (
             <li key={i}>
               <SettingsButton

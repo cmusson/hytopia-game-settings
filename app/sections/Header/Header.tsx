@@ -4,8 +4,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="w-full flex items-center justify-between pb-2 border-b">
-      <div className="flex flex-row items-center justify-start gap-10">
+    <header className="w-full flex flex-col md:flex-row items-center justify-between pb-2 border-b border-gray-800">
+      <div className="flex flex-col md:flex-row items-center justify-start gap-10">
         <Image width={100} height={100} src="/HYTOPIA.svg" alt="Hytopia" />
         <div className="flex flex-row gap-4">
           <ExternalLink href=" ">Play</ExternalLink>

@@ -17,9 +17,9 @@ const InfoBox = ({
   otherOptions,
 }: IInfoBox) => {
   return (
-    <div className="border rounded-lg p-4 flex flex-col gap-4">
+    <div className="border border-gray-800 rounded-lg p-4 flex flex-col gap-4">
       <div>{`${title}: ${option}`}</div>
-      <div className="text-xs">{info?.info}</div>
+      <div className="text-xs text-gray-200">{info?.info}</div>
 
       {multipleOption ? (
         <div className="text-xs flex flex-col gap-4">
