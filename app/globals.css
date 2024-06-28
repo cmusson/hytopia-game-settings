@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+input[type="range"] {
+  margin: auto;
+  appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+  cursor: pointer;
+  background-color: black;
+}
+
+::-webkit-slider-runnable-track {
+  background-color: #000000;
+}
+
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 38px;
+  background: gray;
+  box-shadow: -300px 0 0 296px rgba(241, 241, 241, 0.2);
+  border-radius: 28%;
+  border: solid 1px white;
+}
+
+::-moz-range-track {
+  height: 40px;
+  background-color: black;
+}
+
+::-moz-range-thumb {
+  background: rgba(241, 241, 241, 0.2);
+  height: 32;
+  border: 1px solid white;
+  box-shadow: -300px 0 0 296px gray;
+  box-sizing: border-box;
+  border-radius: 28%;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
